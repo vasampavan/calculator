@@ -4,6 +4,7 @@
     grid-auto-flow:row;
     grid-gap: 20px;
     height: 65%;
+   
 }
 button{
     color: rgb(10, 10, 10);
