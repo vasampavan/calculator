@@ -16,13 +16,28 @@ var buttons=document.querySelectorAll("button")[i].addEventListener("click",func
 }
 
 function buttonClicked(buttonName){
-if(buttonName==1 || buttonName==2 || buttonName==3 || buttonName==4 || buttonName==5 || buttonName==6 ||buttonName==7 || buttonName==8 || buttonName==9 || buttonName==0 || buttonName==="*" || buttonName==="/" || buttonName==="-" || buttonName==="+"){
+if(buttonName==1 || buttonName==2 || buttonName==3 || buttonName==4 || buttonName==5 || buttonName==6 ||buttonName==7 || buttonName==8 || buttonName==9 || buttonName==0 || buttonName==="*" || buttonName==="/" || buttonName==="." || buttonName==="-" || buttonName==="+"|| buttonName==="(" || buttonName===")"){
     var pastInput=document.querySelector("input").value;
     
     document.querySelector("input").value=pastInput+buttonName;
 }
 else if(buttonName==="C" || buttonName==="c"){
     document.querySelector("input").value="";
+}
+else if(buttonName==="del"){
+    document.querySelector("input").value=document.querySelector("input").value.slice(0,-1);
+}
+else if(buttonName==="1/x"){
+    document.querySelector("input").value=1/(document.querySelector("input").value);
+}
+else if(buttonName==="x²"){
+    document.querySelector("input").value=(document.querySelector("input").value)**2;
+}
+else if(buttonName==="√"){
+    document.querySelector("input").value=(document.querySelector("input").value)**0.5;
+}
+else if(buttonName==="+/-"){
+    document.querySelector("input").value=(document.querySelector("input").value)*-1;
 }
 else if(buttonName==="="){
     try{
