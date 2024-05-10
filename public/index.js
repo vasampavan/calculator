@@ -54,5 +54,5 @@ else{
 }
 function invalid(){
     alert("Invalid Input");
-    window.location.reload();
+    
 }
