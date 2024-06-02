@@ -5,6 +5,7 @@ Welcome to the Calculator! This is a simple yet effective calculator application
 Features:
 
 ->Basic Arithmetic Operations: Addition, subtraction, multiplication,division,square root,square of a number,changing sign of a number.
+
 ->Clear Function: Reset the current calculation.
 
 ->User-Friendly Interface: Intuitive design with responsive layout.
